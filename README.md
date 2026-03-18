@@ -1,17 +1,18 @@
 # Task Tracker Full Stack Application
 
-A full stack task tracking application built to practice real-world development using React, FastAPI, MongoDB, Redis, and Docker.
+A full stack task tracking application built to practice real-world development using React, FastAPI, MongoDB Atlas, Redis, and Docker.
 
 ## Features
 
 - Create tasks
 - View tasks
 - Edit task title and description
-- Toggle task status between pending and completed
+- Toggle task status (pending/completed)
 - Delete tasks
-- Filter tasks by status
-- Dashboard cards for total, completed, and pending tasks
+- Filter tasks (All / Pending / Completed)
+- Dashboard summary cards
 - Redis caching for task list
+- MongoDB Atlas cloud database
 - Dockerized backend services
 
 ## Tech Stack
@@ -27,7 +28,7 @@ A full stack task tracking application built to practice real-world development 
 - Python
 
 ### Database and Cache
-- MongoDB
+- MongoDB Atlas
 - Redis
 
 ### DevOps
@@ -43,22 +44,3 @@ AssignmentProject/
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
-
-How to Run the Project
-1. Start backend, MongoDB, and Redis
-Run from the project root:
-
-docker compose up --build -d
-2. Start frontend
-Open another terminal:
-
-cd frontend
-npm install
-npm run dev
-3. Open the application
-Frontend:
-
-http://localhost:5173
-Backend API docs:
-
-http://localhost:8080/docs
