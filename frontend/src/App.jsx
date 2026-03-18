@@ -15,7 +15,7 @@ function App() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  const API_URL = "http://localhost:8080";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
 
   const fetchTasks = async () => {
     const res = await axios.get(`${API_URL}/tasks`);
