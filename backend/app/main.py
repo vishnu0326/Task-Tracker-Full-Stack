@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.tasks import router
-
+import os
+port = int(os.environ.get("PORT", 10000))
 app = FastAPI()
 
 app.add_middleware(
